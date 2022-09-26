@@ -5,4 +5,4 @@ build:
 	@docker-compose up --build
 
 shell:
-	@docker exec -it app bash
+	@docker exec -it food_place_app bash
