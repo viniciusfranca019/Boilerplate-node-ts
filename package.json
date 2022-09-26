@@ -4,7 +4,7 @@
   "description": "projeto para gerênciar um pizzaria com simples operações de CRUD",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./dist/src/index.js",
+    "start": "npm run build && node ./dist/index.js",
     "dev": "tsnd ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
