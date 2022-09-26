@@ -1,16 +1,19 @@
-import express from 'express';
-import { StatusCodes } from 'http-status-codes';
+import express, { Application, Request, Response } from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
 
-const app = express();
+const app: Application = express();
 
-app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors({ origin: true }))
 
-const PORT = 8000;
+app.get('/', (req: Request, res: Response) => {
+  res.send('Healthy')
+})
 
-app.get('/', (req, res) => {
-  res.status(StatusCodes.OK).send('Express + TypeScript')
-});
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
-});
+  console.log(`Server is running on PORT ${PORT}`)
+})
