@@ -1,7 +1,7 @@
 {
-  "name": "pizzaria",
+  "name": "food-place",
   "version": "1.0.0",
-  "description": "projeto para gerênciar um pizzaria com simples operações de CRUD",
+  "description": "projeto para criar um market place de restaurantes e seus produtos (ifood based)",
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node ./dist/index.js",
