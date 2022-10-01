@@ -1,10 +1,10 @@
 {
-  "name": "food-place",
+  "name": "boilerplate",
   "version": "1.0.0",
-  "description": "projeto para criar um market place de restaurantes e seus produtos (ifood based)",
+  "description": "boilerplate for nodejs apps",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && node ./dist/index.js",
+    "start": "npm run build && node ./build/index.js",
     "dev": "tsnd ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"

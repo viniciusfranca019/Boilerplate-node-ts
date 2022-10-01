@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    container_name: food_place_app
+    container_name: boilerplate
     build: ./
     command: npm start
     ports: 
