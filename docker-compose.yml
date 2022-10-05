@@ -8,4 +8,10 @@ services:
       - 8080:8080
     restart: always
     volumes:
-      - ./src:/app/src 
+      - ./src:/app/src
+    networks:
+      - boilerplate_network
+networks:
+  boilerplate_network:
+    name: boilerplate_network
+    driver: bridge
