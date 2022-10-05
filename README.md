@@ -18,3 +18,6 @@ This is a boiler plate for nodejs apps with typescript
     - make serve : will start the app with docker
     - make dev : will build and start the app with docker and use the ts-node-dev
     - make shell : will open the container app shell on your terminal
+
+## obs
+    - if you have any suggestions make a PR
