@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    container_name: boilerplate
+    container_name: app
     build: ./
     command: npm start
     ports: 
@@ -11,6 +11,21 @@ services:
       - ./src:/app/src
     networks:
       - boilerplate_network
+  database:
+    container_name: database
+    image: postgres:12
+    restart: always
+    tty: true
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data/
+    networks:
+      - boilerplate_network
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=boilerplate
 networks:
   boilerplate_network:
     name: boilerplate_network
