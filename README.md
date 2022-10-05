@@ -2,7 +2,9 @@ This is a boiler plate for nodejs apps with typescript
 
 ## Versions
 
-    - node version = 18.3.0, you can change it with you want
+    - node version = 16.17.1, you can change it with you want
+    - postgre version = 12
+    - typescript version = 4.8.3
 
 ## Instructions
 
