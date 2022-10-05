@@ -1,7 +1,7 @@
 version: "3.8"
 services:
-  app:
-    container_name: app
+  boilerplate_app:
+    container_name: boilerplate_app
     build: ./
     command: npm run dev
     ports: 
