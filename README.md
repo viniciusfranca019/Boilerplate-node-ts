@@ -9,8 +9,8 @@ This is a boiler plate for nodejs apps with typescript
 ## Instructions
 
     1. first you gonna need to use docker to run this boiler plate
-    2. on package json you can change the app name and his description
-    3. on docker-composes change the names of containers from boilerplate to whatever you want
+    2. on package.json you can change the app name and his description
+    3. on docker-composes change the names of containers and network from boilerplate to whatever you want
     4. change the name of the container on command make shell, on make file, to works like a charm
 
 ## Commands
