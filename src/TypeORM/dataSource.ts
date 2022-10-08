@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
-const DB_PORT = Number(process.env.POSTGRES_PORT) || 5432;
+const DB_PORT = process.env.ENVIRONMENT === "Dev"  ? 5432 : Number(process.env.POSTGRES_PORT);
 
 export const AppDataSource = new DataSource({
     type: "postgres",

@@ -21,3 +21,4 @@ This is a boiler plate for nodejs apps with typescript
 
 ## obs
     - if you have any suggestions make a PR
+    - set ENVIRONMENT var on .env as **Dev**, to works on local usage. you dont need to set a value to this var if you are not using a local db
