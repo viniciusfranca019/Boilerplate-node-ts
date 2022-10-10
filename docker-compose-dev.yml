@@ -11,6 +11,8 @@ services:
       - ./src:/app/src
     networks:
       - boilerplate_network
+    environment:
+      - ENVIRONMENT=Dev
   database:
     container_name: database
     image: postgres:12
