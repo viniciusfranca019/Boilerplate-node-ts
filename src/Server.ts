@@ -3,8 +3,8 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 
 export class Server {
-    app: Application;
-    port: string|number;
+    private app: Application;
+    private port: string|number;
 
     constructor(port: string|number) {
         this.app = express();
@@ -12,12 +12,12 @@ export class Server {
     }
 
     public init() {
-      this.setMiddlewares();
+      this.setGlobalMiddlewares();
       this.setRoutes();
       this.listenUp();
     }
 
-    private setMiddlewares() {
+    private setGlobalMiddlewares() {
       const { app } = this;
       app.use(bodyParser.json());
       app.use(bodyParser.urlencoded({ extended: true }));

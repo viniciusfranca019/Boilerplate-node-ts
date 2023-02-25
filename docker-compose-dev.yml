@@ -15,7 +15,7 @@ services:
       - ENVIRONMENT=Dev
   database:
     container_name: database
-    image: postgres:12
+    image: postgres:15
     restart: always
     tty: true
     ports:
